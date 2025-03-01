@@ -1,0 +1,74 @@
+<!--Using Forms-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="contact-me">
+        <b>User Name:</b><input type="text" placeholder="email"> <br> <br>
+        Password: <input type="password">
+        <input type="submit">
+    </form> <br><br>
+    <form action="contact-me">
+        <label for="email"><b>User Name:</b></label>
+        <input type="text" placeholder="email" required="true"> <br> <br> <!--required inline element is used for mandatory details warning message-->
+        <label for="user_password"><b>Password:</b></label>
+        <input id="user_password" type="password"> <br><br>
+        Submit: <input type="submit"><br><br>
+
+        Date: <input type="date"><br> <br>
+        File:<input type="file"><br><br>
+        Color: <input type="color"> <br><br>
+        Price Range: <input type="range"> <br><br>
+        Poke Me: <input type="button" value="poked"><br><br>
+        <label>Male:</label>
+        <input type="radio" name="gender" value="male"> <br> <!--unique gender for all three inputs so that you can choose only one option of radio-->
+        <label>Female:</label>
+        <input type="radio" name="gender" value="female"><br>
+        <label>Other:</label>
+        <input type="radio" name="gender" value="other"> <br><br>
+
+        <input type="radio" name="gender" value="male"> <!--used gender, gender1 and gender so that you can choose multiple options of radio-->
+        <input type="radio" name="gender1" value="female">
+        <input type="radio" name="gender2" value="other"> <br><br>
+        
+        <!--For connecting Label & buttons together. You can test it by clicking on the Label Name & button will be selected because of connection-->
+        <label for="male">Male:</label>
+        <input type="radio" id="male" name="gender" value="male"> <br> <!--unique gender for all three inputs so that you can choose only one option of radio-->
+        <label for="female">Female:</label>
+        <input type="radio" id="female"name="gender" value="female"><br>
+        <label for="other">Other:</label>
+        <input type="radio" id="other" name="gender" value="other"> <br><br>
+
+        Submit: <input type="submit"> <br><br>
+
+        <!--using checkbox-->
+        <label for="C">C</label>
+        <input type="checkbox" name="=lang" id="C"><br>
+        <label for="Java">Java</label>
+        <input type="checkbox" name="lang" id="Java"> <br>
+        <label for="Python">Python</label>
+        <input type="checkbox" name="lang" id="Python"> <br> <br>
+
+        Submit: <input type="submit"><br><br>
+    </form>
+
+    <form>
+        <!--options for choose-->
+    <label for="fruits">Choose a fruit</label>
+    <select name="fruits" id="fruits">
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Cherry">Cherry</option>
+    </select><br><br>
+
+    <textarea name="story" id="story" cols="40" rows="5"> 
+    write a story </textarea> <!--Text Box for text enter--> <br><br>
+
+    <iframe src="https://www.wikipedia.org/" frameborder="0" width="300" height="315"></iframe>
+</form>
+</body>
+</html>
